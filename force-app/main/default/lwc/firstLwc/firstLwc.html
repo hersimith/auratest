@@ -1,0 +1,38 @@
+<template>
+    <lightning-card
+      variant="Narrow"
+      title="My First LWC"
+      icon-name="action:fallback"
+    >
+      <lightning-button-icon
+        icon-name="action:delete"
+        variant="border-filled"
+        alternative-text="Show More"
+        slot="actions"
+      ></lightning-button-icon>
+      <p class="slds-p-horizontal_small">{message}</p>
+      <p slot="footer">Clarusway - Triforcia</p>
+    </lightning-card>
+    <lightning-card
+      variant="Narrow"
+      title="Type Your Name"
+      icon-name="standard:account"
+    >
+      <lightning-button-icon
+        icon-name="utility:down"
+        variant="border-filled"
+        alternative-text="Show More"
+        slot="actions"
+      ></lightning-button-icon>
+      <p class="slds-p-horizontal_small">
+        <lightning-input
+          type="text"
+          label="Enter some text"
+          value="ACME Inc."
+          onchange={inputNameHandler}
+        ></lightning-input>
+      </p>
+      <p slot="footer">Card Footer</p>
+    </lightning-card>
+  </template>
+  

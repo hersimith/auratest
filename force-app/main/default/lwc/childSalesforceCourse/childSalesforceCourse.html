@@ -1,0 +1,16 @@
+<template>
+    <!--title salesforce du.{cohortName} yaptık.Clarusway parentta butona onclick yapıgımızda 
+         <c-child-salesforce-course cohort-name={childCohortName}>
+                assignChildCohortNameHandler(){
+        this.childCohortName='Cohort 1'; metodu çağrılıyor ve title isimideğişiyor
+        buton onclick={onPassDataToParentComponent} ile ChildSalesforceCourse clasındaki metodu çağırdık
+        method içerisinde butona tıklandığında parente mesaj gönderen method tanımlı-->
+    <lightning-card  variant="Narrow"  title={cohortName} icon-name="utility:activity">
+        <lightning-button-icon onclick={onPassDataToParentComponent} icon-name="utility:down"
+         variant="border-filled" 
+        alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small">Cohort Name : {cohortName}</p>
+        <p slot="footer">Card Footer</p>
+    </lightning-card>
+</template> 
+

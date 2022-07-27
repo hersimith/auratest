@@ -1,0 +1,31 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Clarusway" icon-name="utility:activity">
+        <lightning-button-icon  onclick={assignChildCohortNameHandler} icon-name="utility:down" 
+        variant="border-filled" 
+        alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small">I am parent component </p>
+
+        <br />
+        {cohortlist} // mesajın gösterileceği yer.
+        <br />
+        <!--br tagları arasına child comp. çağırdık-->
+                <!--child companent name(küçük harf ve araya çizgi koy 
+                    properties name(değişken adı)=""
+                Parentta butona tıklandı ve childdeki title değişti
+                -->
+
+                <c-child-salesforce-course cohort-name={childCohortName} 
+                                    onmessagefromchild={ifMessageFromChild}>
+
+
+
+                </c-child-salesforce-course>
+
+
+        <br />
+        <br />
+        <br />
+        <p slot="footer">Card Footer</p>
+
+    </lightning-card>
+</template>

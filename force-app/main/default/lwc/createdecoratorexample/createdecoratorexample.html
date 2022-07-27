@@ -1,0 +1,23 @@
+<template>
+   
+    
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Hello lwc
+        </h3>
+        <div slot="footer">
+                <lightning-badge label="Tag1"></lightning-badge>
+                <lightning-badge label="Tag2"></lightning-badge>
+                <lightning-badge label="Tag3"></lightning-badge>
+        </div>
+        <p class="slds-p-horizontal_small">{contact.FirstName} {contact.LastName}
+                    </p>
+                    <div class="slds-p-around_medium lgc-bg">
+                        <lightning-input type="text" label="FirstName" name="FirstName" onchange={textOnchangeHandler}></lightning-input>
+                    </div>
+                    <div class="slds-p-around_medium lgc-bg">
+                        <lightning-input type="text" label="LastName" name="LastName" onchange={textOnchangeHandler}></lightning-input>
+                    </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,19 @@
+<aura:component controller ="simpleCalcservercontroller" implements="flexipage:availableForAllPageTypes" access="global">
+
+<aura:attribute name="xNum" type="decimal" />
+<aura:attribute name="yNum" type="decimal" />
+<aura:attribute name="result" type="decimal" />
+
+
+<h1>Aura Companent Simple Calculator</h1>
+xNumber : {!v.xNum}
+yNumber : {!v.yNum}
+result : {!v.result}
+<hr/>
+<ui:inputNumber label="Number X : " aura:id="xno" value="{!v.xNum}" />
+<ui:inputNumber label="Number Y : " aura:id="yno" value="{!v.yNum}" />
+<hr/>
+<ui:button label="+" press="{!c.sumClientController}" class="button" />
+<ui:button label="-" press="{!c.subClientController}" class="button" />
+
+</aura:component>	

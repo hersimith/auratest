@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Create Account">
+      <lightning-record-form
+        object-api-name={objectApiName}
+        fields={fieldList}
+        onsuccess={onSuccessHandler}
+        onerror={onErrorHandler}
+      ></lightning-record-form>
+      <p slot="footer"></p>
+    </lightning-card>
+  </template>
